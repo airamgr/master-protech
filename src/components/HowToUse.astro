@@ -1,0 +1,93 @@
+---
+//import Showcase from '../assets/showcase-two.svg'
+import lineas from '../assets/lineas.jpeg'
+import Ucam from '../assets/logo_UCAM.png'
+
+
+---
+
+
+<section class="product-defined padded">
+    <img src={lineas}>
+    <div class="container">
+         <div class="row product-brief-items">
+            <div class="brief-tab one-half column">
+                <h1 class="h1-title">Máster Protech chief digital officer</h1>
+                <p class="m-paragraph m-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                <!-- <a href="#" class="button button-primary lg">Inscríbete para recibir más información</a> -->
+                <h4 class="h4-title left negro">Certificado por: </h4>
+                <img src={Ucam} alt="Universidad Católica de Murcia">
+               <!-- <ol class="row">
+                    <li class="one-third column"><a href="#">Install extention</a></li>
+                    <li class="one-third column"><a href="#">Use any search filter</a></li>
+                    <li class="one-third column"><a href="#">Automate everything</a></li>
+                </ol> -->
+            </div>
+            <div class="brief-media center one-half column">
+            <!--     <img src={Showcase} alt="Showcase mockup"> -->
+            <h4 class="h4-title">Danos tus datos y te mantendremos informad@ </h4>
+            <script type="text/javascript" src="//comunicaciones.eniit.es/form/generate.js?id=310"></script>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style lang="scss">
+
+.product-defined{  
+    .brief-media img{
+      width: 400px;
+      @media (max-width:700px) {
+        width: 300px;
+      }
+    }
+    .brief-tab{
+        padding-top: 50px;
+    }
+    ol{
+        counter-reset: step;
+        align-items: center;
+        list-style: none;
+        >li{
+            padding-left: 40px;
+            position: relative;
+            &::before{
+                counter-increment: step;
+                content: counter(step);
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                margin-top: -13px;
+                text-align: center;
+                font-size: 13px;
+                line-height: 1.8em;
+                border: 2px solid #000;
+                font-weight: 700;
+                border-radius: 8px;
+            }
+            a{
+                text-decoration: none;
+                color: #000;
+            }
+        }
+        @media (max-width:700px) {
+            gap: 10px;
+            .column{
+                width: 33%;
+                padding-left: 30px;
+                &::before{
+                    width: 18px;
+                    height: 18px;
+                    font-size: 10px;
+                }
+                a{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+  }
+</style>

@@ -1,0 +1,155 @@
+---
+// import Few from '../assets/few.svg'
+import Jero from '../assets/Jero.png'
+import JoseManuel from '../assets/JoseManuel.png'
+import JavierEscribano from '../assets/JavierEscribano.png'
+import CarlosAlberto from '../assets/CarlosAlbertoSaiz.png'
+import CesarGabriel from '../assets/CesarGabriel.jpeg'
+import JoseEmilio from '../assets/JoseEmilioNogues.png'
+import BenjaminGonzalez from '../assets/BenjaminGonzalez.jpeg'
+import AdolfoLopez from '../assets/AdolfoLopez.jpeg'
+import FernandoGayubo from '../assets/FernandoGayubo.jpeg'
+
+---
+
+<section class="fine-section padded" id="Tutores">
+    <h2 class="h1-title blanco center">Algunos de nuestros tutores</h2>
+    <div class="container">
+        
+        <div class="row">
+            <div class="sol-wrap one-third column">
+                <div class="sol-media m-margin">
+                    <img src={Jero} alt="Jerónimo Alonso">
+                </div> 
+                <h3 class="h3-title blanco">Jerónimo Alonso</h3>
+                <p class="blanco">MRICS Building Surveyor,Project Manager BIM Manager Advance ACP, ITeC y Signeblock</p>
+            </div>
+            <div class="sol-wrap one-third column">
+                <div class="sol-media m-margin">
+                    <img src={JoseManuel} alt="José Manuel González Varona">
+                </div>
+                <h3 class="h3-title blanco">José Manuel González</h3>
+                <p class="blanco">Experto en Transformación Digital y Economía Circular en PYMES</p>
+            </div>
+            <div class="sol-wrap one-third column">
+                <div class="sol-media  m-margin">
+                    <img src={JavierEscribano} alt=">Javier Escribano Cordovés">
+                </div> 
+                <h3 class="h3-title blanco">Javier Escribano</h3>
+                <p class="blanco">EUR ING, Ejecutivo experto en Transformación Digital, e-commerce y Comunicación Empresarial</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="sol-wrap one-third column">
+                <div class="sol-media  m-margin">
+                    <img src={CarlosAlberto} alt=">Carlos Alberto Saiz Peña">
+                </div> 
+                <h3 class="h3-title blanco">Carlos Alberto Saiz</h3>
+                <p class="blanco">Experto en Risk & Compliance, Privacidad, TechLaw, Ciberseguridad y Tecnologías LegalTech</p>
+            </div>
+            <div class="sol-wrap one-third column">
+                <div class="sol-media  m-margin">
+                    <img src={CesarGabriel} alt=">Cesar Gabriel López Serrano">
+                </div> 
+                <h3 class="h3-title blanco">Cesar Gabriel López</h3>
+                <p class="blanco">Government Affairs Director Microsoft | Institutional Relations | Regulatory Affairs | Responsible AI | Generative AI | Data Protection | Intellectual Property</p>
+            </div>
+            <div class="sol-wrap one-third column">
+                <div class="sol-media  m-margin">
+                    <img src={JoseEmilio} alt=">José Emilio Nogués">
+                </div> 
+                <h3 class="h3-title blanco">José Emilio Nogués</h3>
+                <p class="blanco">CEO en arqteam</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="sol-wrap one-third column">
+                <div class="sol-media  m-margin">
+                    <img src={BenjaminGonzalez} alt=">Benjamín González Cantó">
+                </div> 
+                <h3 class="h3-title blanco">Benjamín González</h3>
+                <p class="blanco">MSc Industrial Engineering | BIM Expert | R&D Project Manager at CYPE Software</p>
+            </div>
+            <div class="sol-wrap one-third column">
+                <div class="sol-media  m-margin">
+                    <img src={AdolfoLopez} alt=">Adolfo López Paredes">
+                </div> 
+                <h3 class="h3-title blanco">Adolfo López</h3>
+                <p class="blanco">Universidad de Málaga, Depto. de Economía y Administración de Empresas</p>
+            </div>
+            <div class="sol-wrap one-third column">
+                <div class="sol-media  m-margin">
+                    <img src={FernandoGayubo} alt=">Fernando Gayubo">
+                </div> 
+                <h3 class="h3-title blanco">Fernando Gayubo</h3>
+                <p class="blanco">Head of the Industrial and Digital Systems Division at CARTIF</p>
+            </div>
+        </div>
+    </div>
+</section> 
+
+<style lang="scss">
+
+
+.fine-section{
+    background-color: #000000;
+    .container{
+        position: relative;
+    }
+}
+.testimony{
+    background-color: #000000;
+    padding: 60px;
+    border-radius: 20px;
+}
+.customer-testimony{
+    width: 70%;
+    h4, p{
+        color: #fff;
+    }
+}
+
+.customer-pic{
+    width: 30%;
+}
+
+
+ .lineas{
+    margin-top: -30px;
+ }
+ .logo-image {
+    width: 240px;
+    height: 78px;
+    display: block;
+    margin: 0px auto;
+    img{
+        width: 100%;
+    }
+ }
+
+ .arrow-image{
+    position: absolute;
+    top: -200px;
+    img{
+        width: 200px;
+    }
+ }
+ img{
+        height: 150px;
+        border-radius: 30px;
+    }
+
+ @media (max-width:700px) {
+    .flex{
+        flex-direction: column;
+        .circular-image{
+            position: relative;
+        }
+    }
+    
+    .sol-wrap{
+            padding: 30px;
+        }
+ }
+
+</style>

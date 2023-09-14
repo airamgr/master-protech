@@ -1,0 +1,51 @@
+---
+import Showcase from '../assets/tweet.svg'
+// import Cursor from '../assets/cursor.svg'
+ import Ucam from '../assets/logo_UCAM.png'
+
+---
+
+
+<section class="product-hero">
+    <div class="container">
+       <div class="row">
+           <div class="one-half column">
+              <div class="d-cell">
+               <h1 class="h1-title">Máster Protech chief digital officer</h1>
+               <div class="content">
+                   <p>Aplicar en las empresas o entidades las metodologías en gestión de datos generados por procesos, procedimientos, herramientas y habilitadores digitales de forma integral y estructurada del entorno físico para la toma de decisiones estratégicas, gestión del cambio y operaciones.</p>
+                   <a href="#" class="button button-primary lg">Inscríbete para recibir más información</a>
+               </div>
+              </div>
+           </div>
+           <div class="brief-media center one-half column">
+            <img src={Showcase} alt="Showcase mockup">
+        </div>
+       </div>
+    </div>
+   </section>
+
+   <style lang="scss">
+
+    .product-hero{
+        padding: 50px 0;
+        .one-half{
+            display: table;
+            height: 400px;
+            margin-bottom: 40px;
+            .d-cell{
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+    .hero-media{
+        position: relative;
+        img:not(.u-full-width){
+            width: 80px;
+            position: absolute;
+            left: 20px;
+            bottom: 0;
+        }
+      }
+    }
+   </style>
